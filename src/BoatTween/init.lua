@@ -481,6 +481,8 @@ function BoatTween.Create(_, Object, Data)
 		end
 	end
 
+	TweenObject.Cancel = TweenObject.Stop
+
 	function TweenObject.Resume()
 		Play(CurrentLayer, CurrentlyReversing)
 		ResumedEvent:Fire()
